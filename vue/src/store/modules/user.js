@@ -19,7 +19,7 @@ const actions = {
                 });
         });
     },
-    async getDetailUser({ commit }, {username}) {
+    async getDetailUser({ commit }, username) {
         return new Promise((resolve, reject) => {
             getDetailUser(username)
                 .then((response) => {

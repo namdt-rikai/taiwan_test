@@ -21,7 +21,7 @@ class UserController extends Controller
                 'Accept' => 'application/vnd.github+json',
             ]
         )
-            ->get("{$gitUrl}/users?per_page=100");
+            ->get("{$gitUrl}/users");
         return response()->json(
             [
                 'data' => $response->object(),
